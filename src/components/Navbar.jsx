@@ -18,8 +18,8 @@ const Navbar = () => {
                     <Link to='/contact'>CONTACT</Link>
                 </div>
                 <div class="btns">
-                    <button class="btn-sign-up">SIGN UP</button>
-                    <button class="btn-log-in">LOG IN</button>
+                    <Link to=''><button class="b-btn">SIGN UP</button></Link>
+                    <Link to=''><button class="w-btn">LOG IN</button></Link>
                 </div>
             </div>
         </nav>

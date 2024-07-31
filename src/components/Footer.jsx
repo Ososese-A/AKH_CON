@@ -3,7 +3,7 @@ import map from '../assets/map.png';
 const Footer = () => {
     return ( 
         <>
-        
+
     <div class="location">
         <div class="header">
             <h2>LOCATION</h2>

@@ -1,21 +1,22 @@
 .whole {
+    background-color: var(--w);
     width: 100vw;
-    margin: 12px 0px 0px 0px;
-}
-
-.navBar {
-    background-color: #fbfbfb;
-    padding: 12px 56px;
+    margin: -1px 0px 0px 0px;
     position: fixed;
     z-index: 1000;
     top: 0;
-    width: 98%;
+}
+
+.navBar {
+    padding: 0.75rem 3.5rem;
+    width: 90vw;
 }
 
 .navBar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid transparent;
 }
 
 .links {
@@ -23,39 +24,38 @@
     text-align: center;
     display: flex;
     position: relative;
+    border: 1px solid transparent;
+    width: 23.625rem;
+    justify-content: space-between;
 }
 
 .links p {
-    color: #822e27;
-    margin: 0 16px;
+    color: var(--dr);
+    margin: 0 1rem;
 }
 
 .btns {
-    padding-right: 56px;
+    width: 11.875rem;
+    height: 2.5rem;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
 }
 
-.btns button:first-child {
-    color: #fbfbfb;
+.b-btn {
+    color: var(--w);
     font-weight: 500;
-    background-color: #6CA2E3;
-    border: 2px solid #6CA2E3;
-    padding: 8px 16px;
+    background-color: var(--b);
+    border: 2px solid var(--b);
+    padding: 0.5rem 1rem;
     border-radius: 0;
 }
 
-.btns button:last-child {
-    color: #6CA2E3;
+.w-btn{
+    color: var(--b);
     font-weight: 500;
-    background-color: #fbfbfb;
-    border: 2px solid #6CA2E3;
-    padding: 8px 16px;
+    background-color: var(--w);
+    border: 2px solid var(--b);
+    padding: 0.5rem 1rem;
     border-radius: 0;
-}
-
-.random-content {
-    width: 100%;
-    height: fit-content;
-    margin: 80px 0px 0px 0px;
-    text-align: center;
-    background-color: #b531b1;
 }
