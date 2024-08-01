@@ -1,8 +1,17 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
+import ham from '../assets/hamnav.svg';
+import hamx from '../assets/hamnavx.svg';
 import '../styles/nav.css';
+import HamPage from './HamPage';
+import { useState } from 'react';
 
 const Navbar = () => {
+    const [openLinks,setOpenLinks] = useState(false);
+    const toggleNavbar = () => {
+        setOpenLinks(!openLinks);
+    }
+
     return ( 
         <>
         <div class="whole">
@@ -21,8 +30,15 @@ const Navbar = () => {
                     <Link to=''><button class="b-btn">SIGN UP</button></Link>
                     <Link to=''><button class="w-btn">LOG IN</button></Link>
                 </div>
+                <div className="ham" onClick={toggleNavbar}>
+                    <img id={openLinks ? "close" : "open"} src={ham} alt="ham-nav icon" />
+                    <img id={openLinks ? "open" : "close"} src={hamx} alt="ham-nav icon" />
+                </div>
             </div>
         </nav>
+        <div id={openLinks ? "open" : "close"}>
+        <HamPage />
+        </div>
         </div>
         </>
      );

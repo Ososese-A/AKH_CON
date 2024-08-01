@@ -1,0 +1,49 @@
+.tour {
+    margin-top: 16px;
+}
+
+.schedule {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#0000ff00, #00ffff03), url('../assets/tour_box_l.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.schedule h2 {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #fbfbfb;
+    margin-top: -36px;
+}
+
+.schedule p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fbfbfb;
+    margin-bottom: 36px;
+}
+
+/* .schedule button {
+    text-align: center;
+    border: 2px solid #fbfbfb;
+    color: #fbfbfb;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #6CA2E3;
+    text-decoration: none;
+    padding: 8px 8px;
+    margin-bottom: 42px;
+}
+
+.schedule button:hover {
+    color: #6CA2E3;
+    background-color: #fbfbfb;
+} */

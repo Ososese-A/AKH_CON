@@ -1,24 +1,12 @@
-:root {
-    --slider-w: 1172px;
-    --slider-h: 588px;
-    --buttons: 588px;
-    --top-space: 16px;
-    --active_c: #6CA2E3;
-    --stroke_c: #FBFBFB;
-    --alternate: #fff000;
-}
-
 .slider {
-    width: var(--slider-w);
-    height: var(--slider-h);
-    /* border-radius: 10px; */
+    width: 100%;
+    height: 70vh;
     overflow: hidden;
-    margin: 20px auto;
 }
 
 .slides {
     width: 500%; /*This line makes all the images wide enough for the slider*/
-    height: var(--slider-h);
+    height: 70vh;
     display: flex;
 }
 
@@ -28,7 +16,7 @@
 
 .slides img { /*Not sure what this does but changing the values does not affect anything*/
     width: 400px;
-    height: var(--slider-h);
+    height: 70vh;
 }
 
 .slide {
@@ -37,22 +25,30 @@
 }
 
 .slide img {  /*This affects the actual size of the image*/
-    width: var(--slider-w);
-    height: var(--slider-h);
+    width: 100%;
+    height: 70vh;
 }
 
 /* css for manual slide navigation */
 
 .navigation-manual { /*This here is to define the container for the slider circles and it is the same width as the slider (800px)*/
     position: absolute;
-    width: var(--slider-w);
-    margin-top: 16px;
+    width: 50vw;
+    margin: 2.05rem auto 0rem auto;
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.nav-man {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .manual-btn { /*This is what the outline of the circles is controlled by*/
-    border: 2.4px solid var(--alternate);
+    border: 2.4px solid var(--w);
     padding: 8px;
     border-radius: 10px;
     cursor: pointer;
@@ -64,7 +60,7 @@
 }
 
 .manual-btn:hover {
-    background: #40D3DC;
+    background: var(--b);
 }
 
 #radio1:checked ~ .first { /*Don't play with these values they cause a bug*/
@@ -83,14 +79,22 @@
 .navigation-auto {
     position: absolute;
     display: flex;
-    width: var(--slider-w);
+    width: 50vw;
     justify-content: center;
-    margin-top: calc(var(--buttons) + 16px);
+    margin: calc(70.7vh ) auto 0rem auto;
+    /* border: 1px solid gold; */
+}
+
+.nav-auto {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 .navigation-auto div {
-    background-color: #822E27;
-    border: 2.4px solid var(--stroke_c);
+    background-color: var(--dr);
+    border: 2.4px solid var(--w);
     padding: 8px;
     border-radius: 10px;
     transition: 1s;
@@ -100,24 +104,136 @@
     margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: var(--active_c);
+#radio1:checked ~ .nav-auto .navigation-auto .auto-btn1 {
+    background: var(--b);
 }
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: var(--active_c);
+#radio2:checked ~ .nav-auto .navigation-auto .auto-btn2 {
+    background: var(--b);
 }
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: var(--active_c);
+#radio3:checked ~ .nav-auto .navigation-auto .auto-btn3 {
+    background: var(--b);
 }
-#radio4:checked ~ .navigation-auto .auto-btn4 {
-    background: var(--active_c);
+#radio4:checked ~ .nav-auto .navigation-auto .auto-btn4 {
+    background: var(--b);
 }
 
 @media screen and (max-width: 500px) {
-    :root {
-        --slider-w: 100%;
-        --slider-h: 50%;
-        --buttons: 320px;
-        --alternate: #ff0000;
+    .slider {
+        width: 100%;
+        height: 48vh;
+        overflow: hidden;
+    }
+    
+    .slides {
+        width: 500%; /*This line makes all the images wide enough for the slider*/
+        height: 48vh;
+        display: flex;
+    }
+    
+    .slides input{  /*This is to remove the radio button*/
+        display: none;
+    }
+    
+    .slides img { /*Not sure what this does but changing the values does not affect anything*/
+        width: 400px;
+        height: 48vh;
+    }
+    
+    .slide {
+        width: 20%;
+        transition: 0.5s;
+    }
+    
+    .slide img {  /*This affects the actual size of the image*/
+        width: 100%;
+        height: 48vh;
+    }
+    
+    /* css for manual slide navigation */
+    
+    .navigation-manual { /*This here is to define the container for the slider circles and it is the same width as the slider (800px)*/
+        position: absolute;
+        width: 50vw;
+        margin: 2.05rem auto 0rem auto;
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid red; */
+    }
+    
+    .nav-man {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .manual-btn { /*This is what the outline of the circles is controlled by*/
+        border: 2.4px solid var(--w);
+        padding: 8px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+    }
+    
+    .manual-btn:not(:last-child) { /*To add margin to all the circles except for the last one*/
+        margin-right: 40px;
+    }
+    
+    .manual-btn:hover {
+        background: var(--b);
+    }
+    
+    #radio1:checked ~ .first { /*Don't play with these values they cause a bug*/
+        margin-left: 0;
+    }
+    #radio2:checked ~ .first {
+        margin-left: -20%;
+    }
+    #radio3:checked ~ .first {
+        margin-left: -40%;
+    }
+    #radio4:checked ~ .first {
+        margin-left: -60%;
+    }
+    
+    .navigation-auto {
+        position: absolute;
+        display: flex;
+        width: 50vw;
+        justify-content: center;
+        margin: calc(48.7vh ) auto 0rem auto;
+        /* border: 1px solid gold; */
+    }
+    
+    .nav-auto {
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navigation-auto div {
+        background-color: var(--dr);
+        border: 2.4px solid var(--w);
+        padding: 8px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    
+    .navigation-auto div:not(:last-child) {
+        margin-right: 40px;
+    }
+    
+    #radio1:checked ~ .nav-auto .navigation-auto .auto-btn1 {
+        background: var(--b);
+    }
+    #radio2:checked ~ .nav-auto .navigation-auto .auto-btn2 {
+        background: var(--b);
+    }
+    #radio3:checked ~ .nav-auto .navigation-auto .auto-btn3 {
+        background: var(--b);
+    }
+    #radio4:checked ~ .nav-auto .navigation-auto .auto-btn4 {
+        background: var(--b);
     }
 }
