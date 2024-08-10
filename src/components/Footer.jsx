@@ -29,8 +29,8 @@ const Footer = () => {
             <div class="explore-content">
                 <h4>INFORMATION</h4>
                 <ul class="listLinks">
-                    <Link to=''><li><p>Privacy Policy</p></li></Link>
-                    <Link to=''><li><p>Terms and Conditions</p></li></Link>
+                    <Link to='/policy'><li><p>Privacy Policy</p></li></Link>
+                    <Link to='/terms'><li><p>Terms and Conditions</p></li></Link>
                 </ul>
             </div>
             </div>

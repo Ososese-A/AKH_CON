@@ -1,0 +1,58 @@
+.contact-means {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-paper-contact {
+    color: var(--dr);
+    border: 1px solid var(--w);
+    width: 24vw;
+    margin: 3.5rem auto 3.5rem auto;
+    background-color: var(--w);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-paper-faq {
+    color: var(--dr);
+    border: 1px solid var(--w);
+    width: 86vw;
+    margin: 3.5rem 0rem;
+    background-color: var(--w);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.contact-txt {
+    margin: 0.5rem 0rem;
+    color: var(--dr);
+}
+
+.contact-li {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.tact-faq {
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 900px) {
+    .contact-means {
+        flex-direction: column;
+        height: 72vh;
+    }
+
+    .contact-paper-contact {
+        width: 72vw;
+    }
+
+    .contact-paper-faq {
+        width: 72vw;
+    }
+}

@@ -1,0 +1,24 @@
+.gallery-tag-con {
+    height: 3rem;
+    width: 24rem;
+    background-color: var(--dr);
+    color: var(--w);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -3.2rem;
+}
+
+.gallery-tag {
+    z-index: 999;
+    background-color: var(--dr);
+    position: absolute;
+}
+
+@media screen and (max-width: 1050px) {
+    .gallery-tag-con {
+        margin-top: -1rem;
+        width: 100%;
+    }
+}

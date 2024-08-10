@@ -22,23 +22,77 @@ a {
     color: var(--dr);
 }
 
-.con-holder {
+li {
+  list-style-position: inside;
+}
+
+.paper-holder {
+  width: 90vw;
+  margin: 3.6rem auto;
   border: 1px solid transparent;
+}
+
+.page-holder-title {
+  margin: 1rem 0rem;
+  line-height: 2.5rem;
+}
+
+.page-holder-sub-title {
+  margin: 1rem 0rem;
+}
+
+.doc-owner-btn {
+  width: 22.5rem;
+  display: flex;
+  justify-content: center;
+  margin: 0rem auto;
+}
+
+
+.con-holder {
   width: 90vw;
   margin: 10rem auto;
+  /* border: 1px solid red; */
+  overflow-x: hidden;
+}
+
+.con-holder-envelope {
+  width: 80vw;
+  margin: 5rem auto 10rem auto;
+  /* border: 1px solid red; */
+  overflow-x: hidden;
+}
+
+.con-holder-contact {
+  width: 90vw;
+  margin: 5rem auto;
+  /* border: 1px solid red; */
+}
+
+.con-holder-explore {
+  width: 100vw;
+  margin: 0rem auto;
+  /* border: 1px solid red; */
+  overflow-x: hidden;
+}
+
+.con-holder-explore-t {
+  width: 90vw;
+  margin: 5rem auto 1rem auto;
+  overflow-x: hidden;
 }
 
 .con-holder-tour-box {
   border: 1px solid transparent;
   width: 90vw;
   margin: 0rem auto 0rem auto;
+  overflow-x: hidden;
 }
 
 .con-holder-slider {
   border: 1px solid transparent;
-  width: 90vw;
-  margin: 5rem auto 5rem auto;
-  /* border: 1px solid purple; */
+  width: 100vw;
+  margin: -1.5rem 0rem 0rem 0rem;
 }
 
 .con-holder-title-slider {
@@ -68,236 +122,36 @@ a {
   padding: 0.5rem 1rem;
   border-radius: 0;
 }
-/*  //////////////////////////////////////////////////////////////////////////////// Slider END*/
-/*//////////////////////////////////////////////////////////////////////////////////  Payment Box START*/
 
-* {
-    font-family: "Roboto Flex";
-  }
-  body {
-    background-color: #e9e9e9;
-  }
-  
-  .payment {
-    margin-left: 150px;
-  }
-  
-  .fullpayment {
-    background-color: #822e27;
-    color: #fafafa;
-    text-align: center;
-    width: 1175px;
-    height: 400px;
-    padding: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  .para p {
-    line-height: 40px;
-  }
-  
-  /* .btn1 button {
-    background-color: #6ca2e3;
-    color: #fafafa;
-    padding: 10px 10px;
-    margin: 10px;
-    border: 1px solid;
-    width: 215px;
-  }
-  
-  .btn1 button:hover {
-    background-color: #fafafa;
-    color: #6ca2e3;
-  }
-  
-  .btn2 button {
-    background-color: #822e27;
-    color: #fafafa;
-    padding: 10px 10px;
-    margin: 10px;
-    border: 1px solid;
-    width: 215px;
-  }
-  
-  .btn2 button:hover {
-    background-color: #6ca2e3;
-    color: #fafafa;
-  } */
-  
-  .instalmentalpayment {
-    background-color: #fafafa;
-    color: #822e27;
-    text-align: center;
-    width: 1175px;
-    height: 400px;
-    padding: 10px;
-    border: 1.5px #822e27 solid;
-    margin-top: 25px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  .text p {
-    line-height: 40px;
-  }
-  
-  /* .button1 button {
-    background-color: #6ca2e3;
-    color: #fafafa;
-    padding: 10px 10px;
-    margin: 10px;
-    border: 1px solid;
-    width: 215px;
-  }
-  
-  .button1 button:hover {
-    background-color: #fafafa;
-    color: #6ca2e3;
-  }
-  
-  .button2 button {
-    background-color: #fafafa;
-    color: #6ca2e3;
-    padding: 10px 10px;
-    margin: 10px;
-    border: 1px solid;
-    width: 215px;
-  }
-  
-  .button2 button:hover {
-    background-color: #6ca2e3;
-    color: #fafafa;
-  } */
-
-/*/////////////////////////////////////////////////////////////////////////////////// Payment Box END*/
-/*//////////////////////////////////////////////////////////////////////////////////  site plan box blue Box START*/
-
-body {
-    padding: 0px;
-    margin: 0px;
-    overflow-x: hidden;
-    font-family: 'Roboto Flex', sans-serif;
+.b-bg-spread_a {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#0000ff00, #00ffff03), url('../assets/tour_box_l.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  overflow-x: hidden;
 }
 
-.view-site-header {
-    margin-top: 16px;
+
+.b-bg-spread_b {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#0000ff00, #00ffff03), url('../assets/siteDesignBlue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  margin: 0rem 0rem 10rem 0rem;
+  overflow-x: hidden;
 }
 
-.view-site-header h2 {
-    color: #822e27;
-    margin-left: 64px;
+.btn-pos-r {
+  display: flex;
+  justify-content: flex-end;
 }
-
-.site-view {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(#0000ff00, #00ffff03), url('../assets/siteDesignBlue.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.site-view button {
-    border: 2px solid #fbfbfb;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 500;
-    padding: 8px 36px;
-    color: #fbfbfb;
-    background-color: #6CA2E3;
-    margin-bottom: 164px;
-}
-
-.site-view button:hover {
-    color: #6CA2E3;
-    background-color: #fbfbfb;
-}
-
-/*/////////////////////////////////////////////////////////////////////////////////// site plan box blue Box END*/
-/*//////////////////////////////////////////////////////////////////////////////////  forms style START*/
-
-body {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto Flex', sans-serif;
-    overflow-x: hidden;
-}
-
-.whole {
-    width: 80vw;
-    margin: 12px auto;
-}
-
-.akh-img {
-    background: linear-gradient(#6c9ce300, #6c96e31a), url('./AKH_extracts/explorePic.png');
-    text-align: center;
-    padding: 4px 8px;
-    border-top: 8px solid #822e27;
-    margin: 0px 8px;
-}
-
-.akh-form {
-    border-bottom: 8px solid #822e27;
-    display: flex; 
-    border-left: 8px solid #822e27;
-    border-right: 8px solid #822e27;
-    padding: 72px 0px 42px 0px;
-}
-
-#registration-form {
-    margin: auto;
-    font-family: 'Roboto Flex', sans-serif;
-    width: 75%;
-}
-
-/* Style form group */
-.form-group {
-  margin-bottom: 32px;
-  color: #822e27;
-  width: 100%;
-}
-
-/* Style labels */
-label {
-  display: block;
-  font-weight: bold;
-}
-
-/* Style text inputs and textareas */
-input[type="text"],
-input[type="date"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-  width: 100%;
-  margin-top: 16px;
-  padding: 10px;
-  border: 1px solid #822e27;
-  color: #822e27;
-}
-
-input[type="email"]::placeholder,
-input[type="text"]::placeholder,
-input[type="tel"]::placeholder {
-    color: #822e27;
-}
-
-/* button {
-    float: right;
-    padding: 8px 32px;
-    margin-right: -20px;
-    margin-bottom: 20px;
-    border-radius: 0px;
-    color: #6CA2E3;
-    border: 2px solid #6CA2E3;
-    background-color: #fbfbfb;
-    position: relative;
-}
-
-button:hover {
-    color: #fbfbfb;
-    background-color: #6CA2E3;
-} */

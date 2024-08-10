@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom';
+import '../styles/site-plan-box.css';
+
 const SitePlanBoxBlue = () => {
     return ( 
         <>
-        <div class="view-site-header">
-        <h2>SITE PLAN</h2>
+        <div className='con-holder-tour-box'>
+            <h1 className='con-holder-title'>SITE PLAN</h1>
         </div>
-        <div class="site-view">
-            <button>VIEW SITE PLAN</button>
+        <div class="b-bg-spread_b">
+                <Link to="/house-plan"><button className='b-btn'>VIEW SITE PLAN</button></Link>
         </div>
         </>
      );

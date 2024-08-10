@@ -39,7 +39,7 @@
     margin: 0 1rem;
 }
 
-.btns {
+.nav-btns {
     width: 11.875rem;
     height: 2.5rem;
     border: 1px solid transparent;
@@ -76,7 +76,7 @@
         display: none;
     }
 
-    .btns {
+    .nav-btns {
         display: none;
     }
 

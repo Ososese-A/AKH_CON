@@ -10,7 +10,6 @@ const Slider = () => {
     return ( 
         <>
         <div className='con-holder-slider'>
-            <h1 className='con-holder-title-slider'>EXPLORE</h1>
             <div class="slider">
                 <div class="slides">
                     <input type="radio" name="rad-btn" id="radio1" />

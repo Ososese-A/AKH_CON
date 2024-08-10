@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import update_1 from '../assets/up_1.jpg';
 import update_2 from '../assets/up_2.jpg';
 import update_3 from '../assets/up_3.jpg';
@@ -82,7 +83,7 @@ const ConstructionUpdate = () => {
                 </div>
             </div>
             <div className='up_case'>
-            <button class="b-btn">VIEW CONSTRUCTION UPDATES</button>
+            <Link to='/construction'><button class="b-btn">VIEW CONSTRUCTION UPDATES</button></Link>
             </div>
         </div>
     </>

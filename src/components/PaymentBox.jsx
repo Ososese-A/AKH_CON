@@ -1,52 +1,49 @@
+import '../styles/payment.css';
+
 const PaymentBox = () => {
     return ( 
         <>
-        <div class="payment">
-      <div class="fullpayment">
-        <h2>FULL PAYMENT</h2>
-        <p>
-          Full payment at the time of signing the <br />
-          contract attracts a discount of 5%.
-        </p>
-        <div class="para">
-          <p>
-            Full Price: ₦ 180 000 000 (Without discount)
-            <br />
-            Full Price: ₦ 150 000 000 (With discount)
+    <div className='con-holder'>
+    <h1 className='con-holder-title'>PAYMENT</h1>
+        <div class="fullpayment">
+          <h2 className='pay-title'>FULL PAYMENT</h2>
+          <p class="pay-txt">
+            Full payment at the time of signing the <br />
+            contract attracts a discount of 5%.
           </p>
-        </div>
-        <div class="btns">
-          <div class="btn1">
-            <button>SIGN & PAY ONLINE</button>
+          <div class="pay-txt">
+            <p>
+              Full Price: ₦ 180 000 000 <br /> (Without discount)
+              <br />
+              Full Price: ₦ 150 000 000 <br /> (With discount)
+            </p>
           </div>
-          <div class="btn2">
-            <button>SIGN & PAY IN PERSON</button>
+          <div className='pay-btn-box'>
+              <button class="b-btn">SIGN & PAY ONLINE</button>
+              <button class="w-btn">SIGN & PAY IN PERSON</button>
           </div>
         </div>
-      </div>
-      <div class="instalmentalpayment">
-        <h2>INSTALMENTAL PAYMENT</h2>
-        <p>
-          Installmental payment to be completed over a <br />
-          period of 18 months. <br />
-          Starting wit an initial payment of 25%
-        </p>
-        <div class="text">
+
+
+        
+        <div class="instalmentalpayment">
+          <h2 className='pay-title'>INSTALMENTAL PAYMENT</h2>
           <p>
-            Full Price: ₦ 180 000 000
-            <br />
-            Initial 25% Payment Price ₦ 45 000 000
+            Installmental payment to be completed <br /> over a period of 18 months. <br />
+            Starting wit an initial payment of 25%
           </p>
-        </div>
-        <div class="buttons">
-          <div class="button1">
-            <button>SIGN & PAY ONLINE</button>
+          <div class="pay-txt">
+            <p>
+              Full Price: ₦ 180 000 000
+              <br />
+              Initial 25% Payment Price ₦ 45 000 000
+            </p>
           </div>
-          <div class="button2">
-            <button>SIGN & PAY IN PERSON</button>
+          <div class="pay-btn-box">
+              <button className='b-btn'>SIGN & PAY ONLINE</button>
+              <button className='w-btn'>SIGN & PAY IN PERSON</button>
           </div>
         </div>
-      </div>
     </div>
         </>
      );

@@ -1,0 +1,43 @@
+.contract-sign {
+    width: 20rem;
+    height: 10rem;
+    border: 1px solid var(--dr);
+    margin: 0.5rem auto;
+}
+
+.contract-sign-con {
+    width: 20rem;
+    color: var(--dr);
+    height: fit-content;
+    border: 1px solid transparent;
+    margin: 2rem auto;
+}
+
+.contract-txt {
+    color: var(--dr);
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.contract-sign-btn {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem auto;
+}
+
+.contract-prev {
+    width: 20rem;
+    height: 10rem;
+    border-bottom: 2px solid var(--dr);
+    margin: 2rem auto;
+}
+
+.contract-prev-con {
+    width: 20rem;
+    height: fit-content;
+    border: 1px solid transparent;
+    margin: 5rem auto;
+    color: var(--dr);
+    text-align: center;
+}

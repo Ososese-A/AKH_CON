@@ -1,0 +1,30 @@
+.paper {
+  color: var(--dr);
+  border: 1px solid var(--w);
+  width: 88vw;
+  margin: 3.5rem auto 3.5rem auto;
+  background-color: var(--w);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 2.5rem 0rem;
+}
+
+.paper-content {
+  width: 75%;
+  margin: 3rem auto;
+  line-height: 1.5rem;
+}
+
+.paper-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper-icon img {
+  width: fit-content;
+  height: fit-content;
+}
+
+.paper-colortext {
+  color: var(--b);
+}

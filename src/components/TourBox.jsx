@@ -7,14 +7,22 @@ const TourBox = () => {
         <h1 className='con-holder-title'>TOUR</h1>
         </div>
 
-        <div class="tour">
-            </div>
+        <div class="b-bg-spread_a">
             <div class="schedule">
-                <h2>SCHEDULE A TOUR</h2>
-                <p>Schedule a date for you to take a <br />
-                tour round your wonderful new <br /> dream home at any time of your <br /> convenience.</p>
-                <button>SCHEDULE A TOUR</button>
+                <h2>VIRTUAL TOUR</h2>
+                <p className='big-t'>Take a virtual tour of your would be new dream home. Immerse yourself in the <br />
+                    design, layout, and ambiance without leaving your current location. Imagine <br />
+                    virtually walking through each room, appreciating the details, and envisioning <br />
+                    yourself living there. </p>
+                <p className='small-t'>Take a virtual tour of your would be new dream <br />
+                    home. Immerse yourself in the design, layout, and <br />
+                    ambiance without leaving your current location. <br />
+                    Imagine virtually walking through each room, <br />
+                    appreciating the details, and envisioning yourself <br />
+                    living there. </p>
+                <button className='b-btn'>EXPOLORE VIRTUAL TOUR</button>
             </div>
+        </div>
         </>
      );
 }

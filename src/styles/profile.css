@@ -1,0 +1,121 @@
+.profile-a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-a-b {
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.profile-con {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: var(--dr);
+    padding: 2rem 1.2rem;
+    border: 1px solid var(--w);
+    width: 88vw;
+    margin: 2rem auto 2rem auto;
+    background-color: var(--w);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.profile-l {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-c {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-r {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-txt {
+    color: var(--dr);
+}
+
+.profile-btn {
+    width: 100%;
+    margin: 2rem 0rem 0rem 0rem;
+    display: flex;
+    justify-content: end;
+}
+
+.profile-spacer-a {
+    margin: 1rem 0rem;
+}
+
+.profile-spacer-b {
+    padding: 0.5rem 0rem;
+}
+
+@media screen and (max-width: 800px) {
+    .profile-con {
+        width: 80vw;
+    }
+
+    .profile-a {
+        flex-direction: column;
+        width: fit-content;
+        justify-content: space-between;
+        height: 48vh;
+    }
+
+    .profile-a-b {
+        flex-direction: column;
+        width: fit-content;
+        justify-content: space-between;
+        height: 120vh;
+        align-items: center;
+        margin: 0rem auto;
+    }
+
+    .profile-l {
+        width: 18rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .profile-c {
+        width: 18rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .profile-r {
+        width: 18rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .profile-align {
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-ed {
+        height: 10rem;
+    }
+}

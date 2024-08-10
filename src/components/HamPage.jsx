@@ -11,8 +11,8 @@ const HamPage = () => {
                 <li className="ham-item"><Link to='/contact'>CONTACT</Link></li>
                 <li className="ham-item"><Link to=''><button class="b-btn">SIGN UP</button></Link></li>
                 <li className="ham-item"><Link to=''><button class="w-btn">LOG IN</button></Link></li>
-                <li className="ham-item"><Link to=''>TERMS & CONDITIONS</Link></li>
-                <li className="ham-item"><Link to=''>PRIVACY POLICY</Link></li>
+                {/* <li className="ham-item"><Link to=''>TERMS & CONDITIONS</Link></li>
+                <li className="ham-item"><Link to=''>PRIVACY POLICY</Link></li> */}
             </ul>
         </div>
         </>

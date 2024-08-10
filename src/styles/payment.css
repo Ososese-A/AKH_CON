@@ -1,0 +1,47 @@
+.fullpayment {
+    background-color: #822e27;
+    color: #fafafa;
+    text-align: center;
+    width: 80vw;
+    height: 52vh;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pay-title {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  .pay-btn-box {
+    height: 10rem;
+    width: 16rem;
+    margin: 0rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+.pay-txt {
+    line-height: 2.5rem;
+  }
+  
+.instalmentalpayment {
+    background-color: var(--w);
+    color: var(--dr);
+    text-align: center;
+    width: 80vw;
+    height: 52vh;
+    padding: 1rem;
+    border: 1.5px var(--dr) solid;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 2rem auto 0rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
