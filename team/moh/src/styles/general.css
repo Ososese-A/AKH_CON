@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+* {
+  font-family: "Roboto Flex";
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #e9e9e9;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: chocolate;
+}
+/*  //////////////////////////////////////////////////////////////////////////////// Slider END*/
+/* //////////////////////////////////////////////////////////////////////////////// Nav bar style START*/
+
+/* //////////////////////////////////////////////////////////////////////////////// Nav bar style ENDS*/
+/* //////////////////////////////////////////////////////////////////////////////// home page hero style STARTS*/
+.background {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#6c9ce312, #6c96e31a),
+    url("../assets/explorePic.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#real {
+  font-size: 32px;
+  word-spacing: 0px;
+  color: #fbfbfb;
+  text-align: center;
+  margin-bottom: 56px;
+  font-weight: bold;
+}
+
+.live {
+  text-align: center;
+  font-size: 32px;
+  color: #fbfbfb;
+  font-weight: 100;
+  line-height: 2;
+  letter-spacing: 1px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+hr {
+  width: 10%;
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+
+#live {
+  margin-bottom: 56px;
+}
+
+button {
+  border: none;
+  padding: 12px 72px;
+  text-align: center;
+  background-color: #fbfbfb;
+  color: #6ca2e3;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 40px #c0c3dc80;
+}
+
+button:hover {
+  color: #fbfbfb;
+  background-color: #6ca2e3;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// home page hero ENDS*/
+/* //////////////////////////////////////////////////////////////////////////////// home page realty STARTS*/
+
+/* //////////////////////////////////////////////////////////////////////////////// home page realty ENDS*/
+/* //////////////////////////////////////////////////////////////////////////////// construction update START*/
+
+.con {
+  width: 980px;
+  margin: auto;
+}
+
+.box_a {
+  width: 100%;
+}
+
+.con_con {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.left_line {
+  border: 1px solid #822e27;
+  background-color: #822e27;
+  padding: 0px 24.2px;
+  height: 680px;
+}
+
+.con_img img {
+  width: 776px;
+  height: 400px;
+  margin-bottom: -2px;
+}
+
+.box_tit {
+  border: 1px solid #fbfbfb;
+  background-color: #fbfbfb;
+  color: #822e27;
+  width: 968px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  border: 1px solid none;
+  width: 920px;
+}
+
+.con_content {
+  background-color: #fbfbfb;
+  float: right;
+}
+
+.con_txt {
+  border: 1px solid #822e27;
+  height: 148px;
+  margin-top: -2px;
+  text-align: center;
+}
+
+.btns_c {
+  color: #6ca2e3;
+  font-weight: 500;
+  background-color: #fbfbfb;
+  border: 1px solid #6ca2e3;
+  padding: 8px 16px;
+  border-radius: 0;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// construction update ENDS*/
+/* //////////////////////////////////////////////////////////////////////////////// footer STARTS*/
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.location {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header h2 {
+  font-size: 32px;
+  margin-left: 32px;
+  color: #822e27;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+.map {
+  width: 100%;
+}
+
+.map img {
+  width: 100%;
+}
+
+.explore {
+  display: flex;
+  position: relative;
+  background-color: #822e27;
+  margin-top: -8px;
+}
+
+.explore-content {
+  margin: 48px 72px;
+  color: #fbfbfb;
+}
+
+.explore-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6ca2e3;
+}
+
+.footer p {
+  color: #fbfbfb;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////// footer Box END*/
+/*//////////////////////////////////////////////////////////////////////////////////  Tour Box START*/
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.tour {
+  margin-top: 16px;
+}
+
+.tour h2 {
+  color: #822e27;
+  margin-left: 64px;
+}
+
+.schedule {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#0000ff00, #00ffff03),
+    url("../assets/tour_box_l.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.schedule h2 {
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #fbfbfb;
+  margin-top: -36px;
+}
+
+.schedule p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fbfbfb;
+  margin-bottom: 36px;
+}
+
+.schedule button {
+  text-align: center;
+  border: 2px solid #fbfbfb;
+  color: #fbfbfb;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #6ca2e3;
+  text-decoration: none;
+  padding: 8px 8px;
+  margin-bottom: 42px;
+}
+
+.schedule button:hover {
+  color: #6ca2e3;
+  background-color: #fbfbfb;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////// Tour Box END*/
+/*//////////////////////////////////////////////////////////////////////////////////  Payment Box START*/
+
+/*/////////////////////////////////////////////////////////////////////////////////// Payment Box END*/
+/*//////////////////////////////////////////////////////////////////////////////////  site plan box blue Box START*/
+
+/*/////////////////////////////////////////////////////////////////////////////////// site plan box blue Box END*/
+/*//////////////////////////////////////////////////////////////////////////////////  forms style START*/
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto Flex", sans-serif;
+  overflow-x: hidden;
+}
+
+.whole {
+  width: 80vw;
+  margin: 12px auto;
+}
+
+.akh-img {
+  background: linear-gradient(#6c9ce300, #6c96e31a),
+    url("./AKH_extracts/explorePic.png");
+  text-align: center;
+  padding: 4px 8px;
+  border-top: 8px solid #822e27;
+  margin: 0px 8px;
+}
+
+.akh-form {
+  border-bottom: 8px solid #822e27;
+  display: flex;
+  border-left: 8px solid #822e27;
+  border-right: 8px solid #822e27;
+  padding: 72px 0px 42px 0px;
+}
+
+#registration-form {
+  margin: auto;
+  font-family: "Roboto Flex", sans-serif;
+  width: 75%;
+}
+
+/* Style form group */
+.form-group {
+  margin-bottom: 32px;
+  color: #822e27;
+  width: 100%;
+}
+
+/* Style labels */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Style text inputs and textareas */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px;
+  border: 1px solid #822e27;
+  color: #822e27;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+  color: #822e27;
+}
+
+button {
+  float: right;
+  padding: 8px 32px;
+  margin-right: -20px;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  color: #6ca2e3;
+  border: 2px solid #6ca2e3;
+  background-color: #fbfbfb;
+  position: relative;
+}
+
+button:hover {
+  color: #fbfbfb;
+  background-color: #6ca2e3;
+}
